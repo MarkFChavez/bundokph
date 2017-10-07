@@ -22,5 +22,7 @@ defmodule Bundokph.Mountain do
     data
     |> cast(params, @fields)
     |> validate_required([:name, :masl])
+    |> validate_inclusion(:difficulty, 1..9)
+    |> validate_inclusion(:spec, ~w(major minor))
   end
 end
