@@ -22,8 +22,8 @@ defmodule Bundokph.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:postgrex, "~> 0.11.1"},
-      {:ecto, "~> 2.0"}
+      {:postgrex, "~> 0.13.0"},
+      {:ecto, "~> 2.2.6"}
     ]
   end
 end
